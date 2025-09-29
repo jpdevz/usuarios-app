@@ -1,14 +1,13 @@
-package com.ejemplo.usuarios.api;
+package com.ejemplo.usuarios.health;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class PingController {
+public class HealthController {
 
     @GetMapping("/ping")
     public String ping() {
         return "pong";
     }
 }
-
